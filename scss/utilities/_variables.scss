@@ -8,3 +8,6 @@ $error: #34757a;
 $error-complement: complement($error);
 $error-dark: darken($error, 30%);
 $error-light: lighten($error, 30%);
+
+//Breakpoints
+$break-m: 768px;
