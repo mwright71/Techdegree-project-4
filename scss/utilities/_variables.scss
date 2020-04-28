@@ -1,0 +1,10 @@
+$main: #777;
+$main-dark: darken($main, 30%);
+$main-light: lighten($main, 30%);
+$secondary: #51ddfc;
+$secondary-light: rgba($secondary, .8);
+$btn-main: #fff;
+$error: #34757a;
+$error-complement: complement($error);
+$error-dark: darken($error, 30%);
+$error-light: lighten($error, 30%);
