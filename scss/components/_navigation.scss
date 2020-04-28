@@ -5,24 +5,29 @@
 .nav {
     padding-left: 0;
     flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-link {
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-    transition: 
-      background-color .2s ease-in-out, 
-      color .2s ease-in-out;
-  }
-  
-  .nav-link:hover {
-    color: $btn-main;
-    background-color: $secondary-light;
+    @include flex-col;
+    &-link {
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 0;
+      display: block;
+      width: 100%;
+      transition: 
+        background-color .2s ease-in-out, 
+        color .2s ease-in-out;
+    }
+    &-link:hover {
+      color: $btn-main;
+      background-color: $secondary-light;
+    }
+    @media (min-width: $break-m){
+      @include flex-row;
+      justify-content: flex-end;
+      align-items: center;
+      &-link {
+        flex-basis: 100px;
+      }
+    }
   }
   
   

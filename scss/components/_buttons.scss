@@ -10,25 +10,27 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    transition: ease-in;
+    transition-duration: .5s;
   }
   
   .default {
-    background-color: $secondary;
+    @include btn($secondary);
   }
   
   .error {
-    background-color: $error;
+    @include btn($error);
   }
   
   .info {
-    background-color: $error-complement;
+    @include btn($error-complement);
   }
   
   .success {
-    background-color: $error-light;
+    @include btn($error-light);
   }
   
   .warning {
-    background-color: $error-dark;
+    @include btn($error-dark);
   }
   

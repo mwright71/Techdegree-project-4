@@ -405,26 +405,43 @@ a {
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  transition: ease-in;
+  transition-duration: 0.5s;
 }
 
 .default {
   background-color: #51ddfc;
 }
+.default:hover {
+  background-color: #9cecfd;
+}
 
 .error {
   background-color: #34757a;
+}
+.error:hover {
+  background-color: #4ba8b0;
 }
 
 .info {
   background-color: #7a3934;
 }
+.info:hover {
+  background-color: #b0524b;
+}
 
 .success {
   background-color: #7fc3c8;
 }
+.success:hover {
+  background-color: #b4dcdf;
+}
 
 .warning {
   background-color: #060e0f;
+}
+.warning:hover {
+  background-color: #1d4244;
 }
 
 /* ============================================= */
@@ -460,7 +477,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -469,10 +485,19 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: rgba(81, 221, 252, 0.8);
+}
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 /* ============================================= */
@@ -509,11 +534,24 @@ a {
 .container {
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -522,6 +560,14 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
 }
 
 .theme.col-1 {
@@ -580,28 +626,10 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .row {
-    flex-direction: row;
-  }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
   }
 
   [class^=col] + [class^=col] {
@@ -654,16 +682,6 @@ a {
 
   .col-12 {
     flex-basis: 100%;
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .nav-link {
-    flex-basis: 100px;
   }
 
   .btn {
