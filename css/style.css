@@ -408,6 +408,16 @@ a {
   transition: ease-in;
   transition-duration: 0.5s;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
+@media (min-width: 768px) {
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
@@ -417,31 +427,31 @@ a {
 }
 
 .error {
-  background-color: #34757a;
+  background-color: #e4757a;
 }
 .error:hover {
-  background-color: #4ba8b0;
+  background-color: #f1b5b8;
 }
 
 .info {
-  background-color: #7a3934;
+  background-color: #927bc1;
 }
 .info:hover {
-  background-color: #b0524b;
+  background-color: #bdafd9;
 }
 
 .success {
-  background-color: #7fc3c8;
+  background-color: #63cc82;
 }
 .success:hover {
-  background-color: #b4dcdf;
+  background-color: #9ddfb0;
 }
 
 .warning {
-  background-color: #060e0f;
+  background-color: #fd7856;
 }
 .warning:hover {
-  background-color: #1d4244;
+  background-color: #feb4a2;
 }
 
 /* ============================================= */
@@ -528,6 +538,13 @@ a {
   margin-right: auto;
 }
 
+@media (min-width: 768px) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
@@ -570,52 +587,125 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .theme.col-1 {
-  background-color: #a97bc1;
+  background-color: #927bc1;
+}
+@media (min-width: 768px) {
+  .theme.col-1 {
+    flex-basis: 8.33%;
+  }
 }
 
 .theme.col-2 {
-  background-color: #c17bc1;
+  background-color: #fd7856;
+}
+@media (min-width: 768px) {
+  .theme.col-2 {
+    flex-basis: 16.67%;
+  }
 }
 
 .theme.col-3 {
-  background-color: #c17baa;
+  background-color: #deb2ee;
+}
+@media (min-width: 768px) {
+  .theme.col-3 {
+    flex-basis: 25%;
+  }
 }
 
 .theme.col-4 {
-  background-color: #c17b93;
+  background-color: #7ee6fd;
+}
+@media (min-width: 768px) {
+  .theme.col-4 {
+    flex-basis: 33.33%;
+  }
 }
 
 .theme.col-5 {
-  background-color: #c17b7b;
+  background-color: #88d9a0;
+}
+@media (min-width: 768px) {
+  .theme.col-5 {
+    flex-basis: 41.67%;
+  }
 }
 
 .theme.col-6 {
-  background-color: #c1927b;
+  background-color: #4da2bb;
+}
+@media (min-width: 768px) {
+  .theme.col-6 {
+    flex-basis: 50%;
+  }
 }
 
 .theme.col-7 {
-  background-color: #c1a97b;
+  background-color: #ec9fa3;
+}
+@media (min-width: 768px) {
+  .theme.col-7 {
+    flex-basis: 58.33%;
+  }
 }
 
 .theme.col-8 {
-  background-color: #c1c17b;
+  background-color: #fd9f85;
+}
+@media (min-width: 768px) {
+  .theme.col-8 {
+    flex-basis: 66.67%;
+  }
 }
 
 .theme.col-9 {
-  background-color: #aac17b;
+  background-color: #e4757a;
+}
+@media (min-width: 768px) {
+  .theme.col-9 {
+    flex-basis: 75%;
+  }
 }
 
 .theme.col-10 {
-  background-color: #93c17b;
+  background-color: #63cc82;
+}
+@media (min-width: 768px) {
+  .theme.col-10 {
+    flex-basis: 83.33%;
+  }
 }
 
 .theme.col-11 {
-  background-color: #7bc17b;
+  background-color: #51ddfc;
+}
+@media (min-width: 768px) {
+  .theme.col-11 {
+    flex-basis: 91.67%;
+  }
 }
 
 .theme.col-12 {
-  background-color: #7bc192;
+  background-color: #80e8d1;
+}
+@media (min-width: 768px) {
+  .theme.col-12 {
+    flex-basis: 100%;
+  }
 }
 
 .card {
@@ -625,77 +715,5 @@ a {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-
-  .col-3 {
-    flex-basis: 25%;
-  }
-
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-
-  .col-6 {
-    flex-basis: 50%;
-  }
-
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-
-  .col-9 {
-    flex-basis: 75%;
-  }
-
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-
-  .col-12 {
-    flex-basis: 100%;
-  }
-
-  .btn {
-    padding: 10px 30px;
-  }
-
-  .btn + .btn {
-    margin-left: 10px;
-  }
-
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

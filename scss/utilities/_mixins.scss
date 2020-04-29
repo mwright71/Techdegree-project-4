@@ -15,6 +15,7 @@
 
 @mixin mq($break) {
     @media (min-width: $break-m){
+        @content;
     }
 }
 

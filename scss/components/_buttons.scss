@@ -12,25 +12,33 @@
     border-radius: 5px;
     transition: ease-in;
     transition-duration: .5s;
-  }
+    @include mq($break-m){
+      padding: 10px 30px;
+    }
+    +.btn {
+      @include mq($break-m){
+        margin-left: 10px; 
+      }
+    }
+}
+
   
-  .default {
-    @include btn($secondary);
-  }
-  
-  .error {
-    @include btn($error);
-  }
-  
-  .info {
-    @include btn($error-complement);
-  }
-  
-  .success {
-    @include btn($error-light);
-  }
-  
-  .warning {
-    @include btn($error-dark);
-  }
-  
+.default {
+  @include btn($btndef);
+}
+
+.error {
+  @include btn($btnerr);
+}
+
+.info {
+  @include btn($btninfo);
+}
+
+.success {
+  @include btn($btnsuc);
+}
+
+.warning {
+  @include btn($btnwar);
+}

@@ -4,10 +4,23 @@ $main-light: lighten($main, 30%);
 $secondary: #51ddfc;
 $secondary-light: rgba($secondary, .8);
 $btn-main: #fff;
-$error: #34757a;
-$error-complement: complement($error);
-$error-dark: darken($error, 30%);
-$error-light: lighten($error, 30%);
+$btndef: #51ddfc;
+$btnerr: #e4757a;
+$btninfo: #927bc1;
+$btnsuc: #63cc82;
+$btnwar: #fd7856;
+$col-1: #927bc1;
+$col-2: #fd7856;
+$col-3: #deb2ee;
+$col-4: #7ee6fd;
+$col-5: #88d9a0;
+$col-6: #4da2bb;
+$col-7: #ec9fa3;
+$col-8: #fd9f85;
+$col-9: #e4757a;
+$col-10: #63cc82;
+$col-11: #51ddfc;
+$col-12: #80e8d1;
 
 //Breakpoints
 $break-m: 768px;
